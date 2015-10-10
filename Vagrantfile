@@ -37,6 +37,7 @@ Vagrant.configure(2) do |config|
 	chmod 766 /tftpboot
 	chown nobody /tftpboot
 	cp /vagrant/undionly.kpxe /tftpboot/
+	cp /vagrant/boot/* /tftpboot/
      SHELL
   end
 
@@ -54,6 +55,7 @@ Vagrant.configure(2) do |config|
 	chmod 766 /tftpboot
 	chown nobody /tftpboot
 	cp /vagrant/undionly.kpxe /tftpboot/
+	cp /vagrant/boot/* /tftpboot/
      SHELL
   end
 end
